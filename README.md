@@ -398,7 +398,7 @@ git log origin/master
 
 ### Passo 2
 
-* :dancers: Clone este repositório para sua máquina local usando `https://github.com/YuriSiman/git-command-line.git`
+* :dancers: Clone este repositório para sua máquina local usando `git clone https://github.com/YuriSiman/git-command-line.git`
 
 ### Passo 3
 
