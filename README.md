@@ -107,7 +107,7 @@ git checkout nome-do-arquivo.txt
 Desfazer o comando git add, retirando as modificações da Staging Area
 
 ```
-git restore --staged .
+git reset
 
 ou
 
