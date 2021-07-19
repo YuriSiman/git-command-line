@@ -6,7 +6,7 @@
 
 * [configuracoes-iniciais](https://github.com/YuriSiman/git-command-line#configuracoes-iniciais)
 * [trabalhando-com-repositório-local](https://github.com/YuriSiman/git-command-line#trabalhando-com-repositório-local)
-* [trabalhando-com-branches](https://github.com/YuriSiman/git-command-line#trabalhando-com-branches)
+* [trabalhando-com-branchs](https://github.com/YuriSiman/git-command-line#trabalhando-com-branchs)
 * [trabalhando-com-repositório-remoto](https://github.com/YuriSiman/git-command-line#trabalhando-com-repositório-remoto)
 * [tipos-de-fluxos-de-trabalho](https://github.com/YuriSiman/git-command-line#tipos-de-fluxos-de-trabalho)
 
@@ -190,7 +190,7 @@ git show
 
 ---
 
-## trabalhando-com-branches
+## trabalhando-com-branchs
 
 Criando uma nova branch e acessando ela, mudando da branch atual para a que foi criada
 
@@ -204,10 +204,16 @@ Criando uma nova branch sem acessar ela, permanendo na branch atual
 git branch nome-da-branch
 ```
 
-Navegando entre branches
+Navegando entre branchs
 
 ```
 git checkout nome-da-branch
+```
+
+Ver todas as branchs
+
+```
+git branch
 ```
 
 Deletando uma branch
