@@ -234,7 +234,7 @@ Fazer merge da master com alguma feature - É preciso ir para a master primeiro 
 git merge nome-da-branch --squash
 ```
 
-Desfazer um merge
+Desfazer um merge dentro da master
 
 ```
 git reset HEAD~1 --hard
