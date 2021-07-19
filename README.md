@@ -28,6 +28,14 @@ git clone https://github.com/YuriSiman/git-command-line.git
 
 ## :rocket: Vamos Comaçar
 
+## download-git
+
+Instalar git:
+
+[![Git - Downloads](https://img.shields.io/badge/git-%237159c1?style=for-the-badge&logo=github)](https://git-scm.com/downloads)  
+
+---
+
 ## configuracoes-iniciais
 
 Exibir credenciais de email, usuário e outros...
