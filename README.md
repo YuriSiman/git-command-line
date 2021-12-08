@@ -2,7 +2,7 @@
 
 <br/>
 <div align="center">
-    <img src="./readme-img/git.png" alt="Logo" width="100" height="100" />
+    <img src="./readme-img/git-original.svg" alt="Logo" width="100" height="100" />
     <h1 align="center">Comandos Git</h1>
     <p align="center">Comandos git para controle de versão</p>
 </div>
