@@ -252,6 +252,12 @@ Ver todas as branchs
 git branch
 ```
 
+Alterando o nome de uma branch
+
+```sh
+git branch -M novo-nome
+```
+
 Deletando uma branch
 
 ```sh
