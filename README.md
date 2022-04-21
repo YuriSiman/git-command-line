@@ -172,6 +172,12 @@ ou
 git log
 ```
 
+Visualização de log - histórico de **absolutamente** todos os commits que foram realizados dentro do repositório, incluindo o reset de commits
+
+```sh
+git reflog
+```
+
 Visualizar as modificações que foram adicionadas ou removidas
 
 ```sh
@@ -182,6 +188,11 @@ Sobrescrever o commit anterior do repositório local - "Editar" o commit anterio
 
 ```sh
 git commit -m "Nova Mensagem" --amend
+```
+Navegando entre commits (atualizando para qualquer commit anterior ou posterior)
+
+```sh
+git reset --hard numero-do-commit
 ```
 
 Cancelar um ou mais commits na ordem conforme o número informado, devolvendo os arquivo modificados para a Staging Area
@@ -231,7 +242,11 @@ git show
 Criando uma nova branch e acessando ela, mudando da branch atual para a que foi criada
 
 ```sh
-git checkout -b nome-da-branch
+git checkout -b nome-da-branch-a-ser-criada 
+
+ou
+
+git checkout -b nome-da-branch-a-ser-criada nome-da-branch-de-referencia
 ```
 
 Criando uma nova branch sem acessar ela, permanendo na branch atual
@@ -258,7 +273,7 @@ Alterando o nome de uma branch
 git branch -M novo-nome
 ```
 
-Deletando uma branch
+Deletando uma branch (não pode estar dentro dela, tem que estar em outra branch para executar o comando)
 
 ```sh
 git branch -d nome-da-branch
@@ -274,7 +289,7 @@ git merge nome-da-branch-a-ser-unida
 IMPORTANTE! Passo a Passo para realizar um merge de forma segura:
 
 1 - git pull (para atualizar a sua branch principal/master)
-2 - git branch nome-da-branch (gerar uma nova branch a partir da branch principal/master, é preciso estar na master)
+2 - git branch nome-da-nova-branch ou git checkout -b nome-da-nova-branch nome-da-branch-princial (gerar uma nova branch a partir da branch principal/master, é preciso estar na master)
 3 - modificações na branch que criou... add. e commit
 3 - git checkout nome-da-branch-principal (mudar para a branch principal/master)
 4 - git pull (atualizando a branch principal/master)
