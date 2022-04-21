@@ -120,14 +120,14 @@ Deletando um repositório local - deletando a pasta oculta .git (powershell)
 rm .git -force
 ```
 
-Adicionando as modificações realizadas na Staging Area (track)
+Adicionando as modificações realizadas na Staging Area (track) - (incluindo o arquivo ao controle de versão)
 
 ```sh
 git add .
 
 ou
 
-git add nome-do-arquivo.txt
+git add "nome-do-arquivo.txt"
 ```
 
 Verificando o status da branch (verificar quais arquivos já foram incluídos no controle de versão e quais ainda não foram, ou também se algum arquivo foi atualizado)
