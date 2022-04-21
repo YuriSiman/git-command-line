@@ -290,11 +290,12 @@ IMPORTANTE! Passo a Passo para realizar um merge de forma segura:
 
 1 - git pull (para atualizar a sua branch principal/master)
 2 - git branch nome-da-nova-branch ou git checkout -b nome-da-nova-branch nome-da-branch-princial (gerar uma nova branch a partir da branch principal/master, é preciso estar na master)
-3 - modificações na branch que criou... add. e commit
-3 - git checkout nome-da-branch-principal (mudar para a branch principal/master)
-4 - git pull (atualizando a branch principal/master)
-5 - git merge nome-da-branch-a-ser-unida (isso deve ser realizado dentro da branch principal/master)
-6 - git push (da branch principal/master)
+3 - modificações na branch que criou... add. , commit, push...
+
+4 - git checkout nome-da-branch-principal (mudar para a branch principal/master)
+5 - git pull (atualizando a branch principal/master)
+6 - git merge nome-da-branch-a-ser-unida (isso deve ser realizado dentro da branch principal/master)
+7 - git push (da branch principal/master)
 
 ```
 
@@ -309,11 +310,12 @@ IMPORTANTE! Passo a Passo para realizar um merge de forma segura:
 
 1 - git pull (para atualizar a sua branch principal/master)
 2 - git branch nome-da-branch (gerar uma nova branch a partir da branch principal/master, é preciso estar na master)
-3 - modificações na branch que criou... add. e commit
-3 - git checkout nome-da-branch-principal (mudar para a branch principal/master)
-4 - git pull (atualizando a branch principal/master)
-5 - git merge nome-da-branch-a-ser-unida (isso deve ser realizado dentro da branch principal/master)
-6 - git push (da branch principal/master)
+3 - modificações na branch que criou... add. , commit, push...
+
+4 - git checkout nome-da-branch-principal (mudar para a branch principal/master)
+5 - git pull (atualizando a branch principal/master)
+6 - git merge nome-da-branch-a-ser-unida (isso deve ser realizado dentro da branch principal/master)
+7 - git push (da branch principal/master)
 
 ```
 
