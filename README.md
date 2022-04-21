@@ -267,7 +267,7 @@ git branch -d nome-da-branch
 Fazer merge da master com alguma feature - É preciso ir para a master primeiro para efetuar o merge. Este comando faz com que todos os commits da sua feature passem a fazer parte do log da master
 
 ```sh
-git merge nome-da-branch
+git merge nome-da-branch-a-ser-unida
 ```
 
 Fazer merge da master com alguma feature - É preciso ir para a master primeiro para efetuar o merge. Este comando não gera um commit automaticamente, ele faz com que apenas o commit desse merge passe a fazer parte do log da master
