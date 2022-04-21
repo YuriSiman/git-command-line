@@ -130,7 +130,7 @@ ou
 git add nome-do-arquivo.txt
 ```
 
-Verificando o status da branch
+Verificando o status da branch (verificar quais arquivos já foram incluídos no controle de versão e quais ainda não foram, ou também se algum arquivo foi atualizado)
 
 ```sh
 git status
