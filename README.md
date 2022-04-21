@@ -266,14 +266,40 @@ git branch -d nome-da-branch
 
 Fazer merge da master com alguma feature - É preciso ir para a master primeiro para efetuar o merge. Este comando faz com que todos os commits da sua feature passem a fazer parte do log da master
 
+**IMPORTANTE**: Sempre realize um `git pull` na sua branch master (ou na branch atual que receberá o merge) antes de fazer o merge, para que com isso, sua branch esteja devidamente atualizada.
+
 ```sh
 git merge nome-da-branch-a-ser-unida
+
+IMPORTANTE! Passo a Passo para realizar um merge de forma segura:
+
+1 - git pull (para atualizar a sua branch principal/master)
+2 - git branch nome-da-branch (gerar uma nova branch a partir da branch principal/master, é preciso estar na master)
+3 - modificações na branch que criou... add. e commit
+3 - git checkout nome-da-branch-principal (mudar para a branch principal/master)
+4 - git pull (atualizando a branch principal/master)
+5 - git merge nome-da-branch-a-ser-unida (isso deve ser realizado dentro da branch principal/master)
+6 - git push (da branch principal/master)
+
 ```
 
 Fazer merge da master com alguma feature - É preciso ir para a master primeiro para efetuar o merge. Este comando não gera um commit automaticamente, ele faz com que apenas o commit desse merge passe a fazer parte do log da master
 
+**IMPORTANTE**: Sempre realize um `git pull` na sua branch master (ou na branch atual que receberá o merge) antes de fazer o merge, para que com isso, sua branch esteja devidamente atualizada.
+
 ```sh
-git merge nome-da-branch --squash
+git merge nome-da-branch-a-ser-unida --squash
+
+IMPORTANTE! Passo a Passo para realizar um merge de forma segura:
+
+1 - git pull (para atualizar a sua branch principal/master)
+2 - git branch nome-da-branch (gerar uma nova branch a partir da branch principal/master, é preciso estar na master)
+3 - modificações na branch que criou... add. e commit
+3 - git checkout nome-da-branch-principal (mudar para a branch principal/master)
+4 - git pull (atualizando a branch principal/master)
+5 - git merge nome-da-branch-a-ser-unida (isso deve ser realizado dentro da branch principal/master)
+6 - git push (da branch principal/master)
+
 ```
 
 Desfazer um merge dentro da master
