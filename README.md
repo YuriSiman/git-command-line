@@ -120,6 +120,16 @@ Deletando um repositório local - deletando a pasta oculta .git (powershell)
 rm .git -force
 ```
 
+Removendo as modificações realizadas no Working Directory, antes de ir para a Staging Area
+
+```sh
+git restore .
+
+ou
+
+git restore nome-do-arquivo.txt
+```
+
 Adicionando as modificações realizadas na Staging Area (track) - (incluindo o arquivo ao controle de versão)
 
 ```sh
@@ -136,24 +146,14 @@ Verificando o status da branch (verificar quais arquivos já foram incluídos no
 git status
 ```
 
-Removendo as modificações realizadas antes de ir para a Staging Area
+Desfazer o comando git add, retirando as modificações da Staging Area, voltando para o Working Directory
 
 ```sh
-git checkout .
+git restore --staged .
 
 ou
 
-git checkout nome-do-arquivo.txt
-```
-
-Desfazer o comando git add, retirando as modificações da Staging Area
-
-```sh
-git reset
-
-ou
-
-git rm --cached nome-do-arquivo.txt
+git restore --staged nome-do-arquivo.txt
 ```
 
 Gerar o commit das suas modificações
@@ -195,7 +195,7 @@ Navegando entre commits (atualizando para qualquer commit anterior ou posterior)
 git reset --hard numero-do-commit
 ```
 
-Cancelar um ou mais commits na ordem conforme o número informado, devolvendo os arquivo modificados para a Staging Area
+Cancelar um ou mais commits na ordem conforme o número informado, devolvendo os arquivo commitados para a Staging Area
 
 ```sh
 git reset HEAD~1 --soft
@@ -223,6 +223,12 @@ Voltando a qualquer commit conforme o seu número
 
 ```sh
 git checkout nome-do-commit
+```
+
+Voltando para a versão atual da master/branch (por exemplo, logo após ter voltado para um commit/tag anterior)
+
+```sh
+git checkout nome-da-branch
 ```
 
 Mostrar conteúdo de um commit
